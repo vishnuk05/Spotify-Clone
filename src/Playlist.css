@@ -1,0 +1,749 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    color: #ffffff;
+  }
+  
+  body {
+    font-family: 'Montserrat', sans-serif;
+    background-color: #000000;
+  }
+  
+.content-container{
+    display: flex;
+}
+.sidebar {
+    width: 24%;
+    /* position: fixed;
+    left: 0;
+    top: 0;
+    bottom: 0; */
+}
+
+.sidebar .logo {
+    background-color: #121212;
+    border-radius: 10px;
+    margin: 10px 10px;
+    padding: 20px 10px;
+}
+
+.sidebar .logo img {
+    width: 110px;
+}
+
+.sidebar .logo ul {
+    list-style: none;
+}
+
+.sidebar .logo ul li {
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.sidebar .logo ul li a {
+    text-decoration: none;
+    font-weight: 700;
+}
+.sidebar .logo ul img {
+    width: 24px;
+}
+
+.sidebar .logo ul li span {
+    margin-left: 5px;
+}
+
+.your-library-card {
+    background-color: #121212;
+    border-radius: 10px;
+    margin: 5px 10px;
+}
+.your-library {
+    height: 330px;
+    padding: 20px 10px;
+}
+.your-library span img {
+    width: 24px;
+}
+
+.your-library .scrollbar {
+    height: 200px;
+    overflow-y: hidden;
+}
+.your-library .scrollbar:hover {
+    height: 200px;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+.your-library .scrollbar::-webkit-scrollbar {
+    width: 10px;
+}
+
+.your-library .scrollbar::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+.your-library .scrollbar::-webkit-scrollbar-thumb{
+    background: #888;
+}
+/* .your-library {
+    background-color: #121212;
+    border-radius: 10px;
+    margin: 10px;
+} */
+
+.your-library .fixed {
+    font-weight: 700;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: space-between;
+    padding: 0px 10px;
+}
+.your-library .fixed-item{
+    display: flex;
+    gap: 10px;
+}
+
+
+.your-library .scrollbar .create-your-first-playlist {
+    background-color: #242424;
+    border-radius: 10px;
+    margin-top: 10px;
+    padding: 15px 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.your-library .scrollbar .lets-find {
+    background-color: #242424;
+    border-radius: 10px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 15px 10px;
+}
+
+.your-library .scrollbar button {
+    border-radius: 20px;
+    background-color: #ffffff;
+    color: #000000;
+    padding: 10px 20px;
+    font-weight: bold;
+    width: fit-content;
+}
+
+.policies {
+    background-color: #121212;
+    padding-left: 10px;
+}
+
+.policies ul li {
+    display: inline-block;
+    margin-right: 10px;
+    margin-bottom: 15px;
+}
+
+.policies ul li a {
+    color: #b3b3b3;
+    font-weight: 500;
+    text-decoration: none;
+    font-size: 10px;
+}
+.language{
+    height: 50px;
+}
+.language button {
+    margin: 10px;
+    padding: 5px 20px;
+    border-radius: 10px;
+    display: flex;
+    gap: 10px;
+    text-align: center;
+    background-color: #121212;
+    border: 1px solid #f1f1f1;
+}
+.language span img {
+    width: 16px;
+}
+.language button span {
+    color: #ffffff;
+}
+.main{
+    width: 76%;
+    height: 700px;
+    /* border: 1px solid #242424; */
+    border-radius: 10px;
+    margin: 10px 5px;
+}
+.main-signup{
+    width: 700px;
+    margin-top: 50px;
+    margin: auto;
+    padding-top: 20px;
+}
+.topbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #242424;
+    border-radius: 10px 10px 0 0;
+    padding: 15px 10px;
+}
+.topbar .prev-next-buttons button{
+    color: #7a7a7a;
+    cursor: not-allowed;
+    width: 34px;
+    height: 34px;
+    border-radius: 100%;
+    font-size: 18px;
+    border: 0;
+    background-color: #090909;
+    margin-right: 10px;
+
+}
+
+.topbar .navbar ul{
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    width: 300px;
+    /* border: 1px solid green; */
+    justify-content: space-around;
+    align-items: center;
+}
+
+.topbar .navbar ul li a{
+    color: #b3b3b3;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 14px;
+    letter-spacing: 1px; 
+}
+.topbar .login{
+    background-color: #ffffff;
+    color: #000000;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 14px 30px;
+    border: 0;
+    border-radius: 40px;
+    cursor: pointer;
+}
+
+
+
+.playlists{
+    height: 480px;
+    overflow-y: hidden;
+}
+.playlists:hover {
+    height: 480px;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+.playlists::-webkit-scrollbar {
+    width: 10px;
+}
+
+.playlists::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+.playlists::-webkit-scrollbar-thumb{
+    background: #888;
+}
+
+.spotify-playlists{
+    padding: 40px 60px;  
+}
+.spotify-playlists h2{
+    color: #ffffff;
+    font-size: 22px;
+    margin-bottom: 20px;
+}
+.spotify-playlists .list {
+    display: flex;
+    gap: 20px;
+    overflow: hidden;
+}
+.spotify-playlists .list .item{
+    min-width: 140px;
+    width: 180px;  
+    /* why use min width and width */
+    padding: 15px;
+    background-color: #181818;
+    cursor: pointer;
+    border-radius: 6px;
+    transition: all ease 0.4s;
+}
+.spotify-playlists .list .item:hover{
+    background-color: #252525;
+}
+.spotify-playlists .list .item img{
+    width: 100%;
+    border-radius: 6px;
+    margin-bottom: 10px;  
+}
+.spotify-playlists .list .item .play{
+    position: relative;
+}
+.spotify-playlists .list .item .play .fa{
+    position: absolute;
+    right: 10px;
+    top: -60px;
+    padding: 18px;
+    background-color: #1db954;
+    color: #000000;
+    border-radius: 100%;
+    opacity: 0;
+    transition: all ease 0.4s;
+}
+.spotify-playlists .list .item:hover .play .fa{
+    opacity: 1;
+    transform: translateY(-20px);
+}
+.spotify-playlists .list .item h4{
+    color: #ffffff;
+    font-size: 14px;
+    margin-bottom: 10px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.spotify-playlists .list .item p{
+    color: #989898;
+    font-size: 12px;
+    line-height: 20px;
+    font-weight: 600;
+}
+
+.preview {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: linear-gradient(to right, #ae2896, #509bf5);
+    padding: 10px 40px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.preview h6 {
+    color: #ffffff;
+    text-transform: uppercase;
+    font-weight: 400;
+    font-size: 12px;
+    margin-bottom: 10px;
+}
+
+.preview p {
+    color: #ffffff;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.preview button {
+    background-color: #ffffff;
+    color: #000000;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 14px 30px;
+    border: 0;
+    cursor: pointer;
+    border-radius: 40px;
+}
+/* ///////////////footer////////// */
+.footer{
+    display: flex;
+    justify-content: space-between;
+  }
+  .footer .socialmedia{
+    margin-top: 90px;
+    display: flex;
+    gap :20px;
+    font-size: 20px;
+    margin-right: 25px;
+  }
+  .footer .socialitem{
+    width: fit-content;
+    padding: 10px;
+    background-color: #252525;
+    border-radius: 50%;
+    height: 40px;
+  
+  }
+  .footer .socialitem:hover{
+    background-color: #7a7a7a;
+  }
+  .footer .about{
+    margin-left: 30px;
+   display: flex;
+   margin-top: 60px;
+   margin-bottom: 40px;
+   text-decoration: none;
+   justify-content: space-between;
+   width: 50%;
+  }
+  .footer li{
+    list-style-type: none;
+    color: #7a7a7a;
+    font-weight: 550;
+    font-size: 18px;
+    margin-top: 18px;
+  }
+  .footer .head{
+    color: white;
+    font-weight: bold;
+  }
+  
+.playlists .copyright{
+    margin-top: 40px;
+    margin-left: 40px;
+    color: #7a7a7a;
+    font-size: 14px;
+    font-weight: 600;
+  }
+/* /////////////////////Login//////////////// */
+.header{
+    background-color: #000000;
+    height: 110px;
+    display: flex;
+}
+.header img{
+    width: 130px;
+    margin-top: 50px;
+    margin-left:40px ;
+}
+.login-main{
+    border-radius: 6px;
+    width: 734px;
+    margin: 32px auto;
+    margin-bottom: 0;
+    background-color: #000000;
+}
+.login-main .login-to-spotify{
+    letter-spacing: 0px;
+    font-size: 42px;
+    font-weight: bold;
+    text-align: center;
+    padding: 60px;
+    color: #ffffff;
+}
+.buttons{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+.buttons button{
+    background-color: #000000;
+    color: #ffffff;
+    border: 1px solid #b3b3b3;
+    width: 350px;
+    border-radius: 20px;
+    padding: 8px ;    
+}
+.buttons button .button-align{
+    display: flex;
+    align-items: center;    
+}
+.buttons button .button-align .img{
+    margin-left: 20px;
+}
+.buttons button .button-align .text{
+    margin-left: 60px;
+    font-size: 16px; 
+    font-weight: 700;
+}
+ .hr{
+    margin: 50px 160px;
+    border-color: #989898;
+}
+form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+form p{
+    color: #ffffff;
+}
+input{
+    width: 350px;
+    padding: 12px;
+    background-color: #000000;
+    border: 1px solid #b3b3b3;
+    border-radius: 6px;
+}
+form .buttons button{
+    background-color:#1db954;
+    color: #000000;
+    font-size: 16px;
+    font-weight: 700;
+    border: 1px solid #1db954;
+    transition: all ease-in-out 0.1s;
+}
+form .buttons button:hover,
+form .buttons button:active,
+form .buttons button:focus{
+    border: 1px solid #ffffff;
+    transform: scale(1.05);
+}
+.buttons button:hover,
+.buttons button:active,
+.buttons button:focus{
+    border: 1px solid #ffffff;
+}
+.mb-20{
+    margin-bottom: 20px;
+}
+.mb-5{
+    margin-bottom: 10px;
+}
+.mb-20 a{
+    color: #ffffff;
+    font-weight: 500;
+}
+.mb-20 label{
+    color: #b3b3b3;
+}
+.footer{
+    font-size: 11px; 
+    color:#b3b3b3;
+    padding-bottom: 20px;
+}
+.footer a{
+    color: #b3b3b3;
+}
+.forgot-password:hover{
+    color: #1db954;
+}
+/* toggle switch */
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 35px;
+    height: 20px;
+  }
+  
+  .switch input { 
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+  
+  .slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  
+  .slider:before {
+    position: absolute;
+    content: "";
+    height: 15px;
+    width: 15px;
+    left: 2px;
+    bottom: 2.3px;
+    background-color: black;
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  
+  input:checked + .slider {
+    background-color: #1db954;
+  }
+  
+  input:focus + .slider {
+    box-shadow: 0 0 1px #1db954;
+  }
+  
+  input:checked + .slider:before {
+    -webkit-transform: translateX(17px);
+    -ms-transform: translateX(17px);
+    transform: translateX(17px);
+  }
+  
+  /* Rounded sliders */
+  .slider.round {
+    border-radius: 34px;
+  }
+  
+  .slider.round:before {
+    border-radius: 50%;
+  }
+  .switch-outer{
+    position: relative;
+    display: inline-block;
+    /* width: 34px;
+    height: 16px;
+    padding: 2px; */
+    padding: 2px;
+    border: 2px solid #000000;
+    border-radius: 34px;
+  }
+  .switch-outer:hover,
+  .switch-outer:active,
+  .switch-outer:focus{
+    padding: 2px;
+    border: 2px solid white;
+    border-radius: 34px;
+  }
+  /* ////////////////Sign up/////////////// */
+  .mt{
+    margin: 10px 0;
+}
+.log-in{
+    font-weight: 700;
+}
+.or{
+    width: 734px;
+    color: #ffffff;
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+}
+.or-text{
+    display: flex;
+    align-items:center;
+    margin: 0 10px;
+}
+.hr-half{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 160px;
+}
+.hr-half hr{
+    border-color: #989898;
+}
+.input-text{
+    color: white;
+}
+/* ////////////////////playlist/////////////////// */
+.playlist{
+    background:linear-gradient(to bottom,rgb(15, 222, 77),#121212) ;
+    overflow: hidden;
+    height: 559px;
+    border-radius: 0 0 10px 10px;
+  }
+  .playlist:hover {
+    height: 559px;
+    overflow-x: hidden;
+    overflow-y: auto;
+  }
+  
+  .playlist::-webkit-scrollbar {
+    width: 10px;
+    display: none;
+  }
+  .playlist::-webkit-scrollbar-track {
+    background: #f1f1f1;
+  }
+  .playlist::-webkit-scrollbar-thumb{
+    background: #888;
+  } 
+  
+  .playlist .details{
+      display: flex;
+  }
+  .playlist  .information{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      margin-top: 40px;
+  }
+  .playlist .details img{
+    height: 240px;
+    margin: 20px 20px;
+  }
+  .playlist  .information p{
+    font-size: 14px;
+    color: #ffffff;
+  }
+  .playlist .information .title{
+    font-size: 85px;
+    font-weight: bolder;
+    margin-bottom: 20px;
+  }
+  .playlist  .information .description{
+      color: #cfcece  ;
+      font-weight: 500;
+  }
+  .playlist  .information span{
+    color: white;
+  }
+  .playlist  .information .gray{
+    color: #cfcece ;
+  }
+  .playlist .information .likes{
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+  }
+  
+  
+  .playlist-play{
+    width: 60px;
+    height: 60px;
+    padding: 10px;
+    border-radius: 50%;
+    background-color: rgb(28, 194, 28);
+  }
+  .playlist-play .play{
+    margin-left: 12px;
+    margin-top: 9px;
+    font-size: 23px;
+  }
+  .playlist-container{
+    background-color: rgba(18, 18, 18,0.6);
+    padding: 20px 20px;
+  }
+  .playlist-main {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .playlist-main .list{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+  }
+  .playlist-container table{
+    width: 100%;
+    font-size: 14px;
+    color: #b3b3b3;
+    margin-left: 10px;
+    margin-top: 30px;
+    padding: 20px;
+  }
+  .playlist-container table th{
+    text-align: left;
+  }
+  .playlist-container table img{
+    border-radius: 5px;
+    height: 45px;
+    margin-right: 15px;
+    padding-left: 15x;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  }
+  .playlist-container table .title{
+    color: white;
+    font-weight: 500;
+  }
+  .playlist-container table td{
+    padding-top: 20px;
+  }
+  
+  
+  .FontAwsomeIcon{
+    margin-right: 10px;
+  }
+  
